@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label for="">First name: </label>
+        <input type="text" id="first-name">
+        <br><br>
+        <label for="">Last name: </label>
+        <input type="text" id="last-name">
+        <br><br>
+        <button onclick="getValueFromInput()">GET VALUE</button>
+    </div>
+    <p id="first-name-result">First name: </p>
+    <p id="last-name-result">Last name: </p>
+
+    <script>
+        let firstName = document.getElementById("first-name");
+        let lastName = document.getElementById("last-name");
+        let lastNameResult = document.getElementById("last-name-result");
+        let firstNameResult = document.getElementById("first-name-result");
+        
+
+        // set value into input
+        //=========
+        // firstName.value = "Da";
+        // lastName.value = "Theara";
+
+
+        // get value from input
+        // =========
+        // console.log(firstName.value);
+        // console.log(lastName.value);
+
+        function getValueFromInput () {
+            firstNameResult.innerHTML += firstName.value;
+            lastNameResult.innerHTML += lastName.value;
+        }
+
+    </script>
+    
+</body>
+</html>
